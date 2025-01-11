@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  NFT Marketplace
+{% endblock %}
+
+{% block content %}
+  <section class="head">
+    <article class="head__main-info">
+      <h1 class="head__title">Discover digital art & Collect NFTs</h1>
+      <p class="head__subtitle">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+      <a href="{% url "homepage:sign" %}">
+        <button type="button" class="head__btn">Get Started</button>
+      </a>
+    </article>
+    <div class="head__container">
+      <img src="{% static "img/head/head__main-pic.png" %}" class="head__main-pic">
+      <p class="head__dis">Space Walking</p>
+    </div>
+  </section>
+{% endblock %}

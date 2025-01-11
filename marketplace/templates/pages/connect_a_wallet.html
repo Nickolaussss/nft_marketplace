@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Connect a wallet
+{% endblock %}
+
+{% block content %}
+  <section class="wallet">
+    <div class="wallet__container-img">
+      <img src="{% static "img/wallet/wallet-img.png" %}" class="wallet__img">
+    </div>
+    <article class="wallet__article">
+      <h2 class="wallet__title">Connect wallet</h2>
+      <p class="wallet__subtitle">Choose a wallet you want to connect. There are several wallet providers.</p>
+      <nav class="wallet__menu">
+        <ul class="wallet__list">
+          <li class="wallet__item">
+            <a href="#" class="wallet__link">
+              <button type="button" class="wallet__btn">Metamask</button>
+            </a>
+          </li>
+          <li class="wallet__item">
+            <a href="#" class="wallet__link">
+              <button type="button" class="wallet__btn">Wallet Connect</button>
+            </a>
+          </li>
+          <li class="wallet__item">
+            <a href="#" class="wallet__link">
+              <button type="button" class="wallet__btn">Coinbase</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </section>
+{% endblock %}

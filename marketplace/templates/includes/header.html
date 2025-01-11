@@ -1,0 +1,24 @@
+{% load static %}
+
+<header class="header">
+  <a href="{% url "homepage:index" %}" class="header__link">
+		<img src="{% static "img/header/header_logo.png" %}" alt="Logo" class="header__logo-img">
+		<h2 class="header__logo-text">NFT marketplace</h2>
+	</a>
+	<nav class="header__menu">
+		<ul class="header__list">
+			<li class="header__item">
+				<a href="{% url "pages:marketplace" %}" class="header__link">Marketplace</a>
+			</li>
+			<li class="header__item">
+				<a href="{% url "pages:rankings" %}" class="header__link">Rankings</a>
+			</li>
+			<li class="header__item">
+				<a href="{% url "pages:connect_a_wallet" %}" class="header__link">Connect a wallet</a>
+			</li>
+		</ul>
+	</nav>
+	<a href="{% url "homepage:sign" %}">
+	  <button type="button" class="header__btn">Sign Up</button>
+	</a>
+</header>
